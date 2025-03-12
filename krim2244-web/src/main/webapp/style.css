@@ -1,0 +1,25 @@
+form {
+    margin-block-end: 0;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+#content-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.entry {
+    background-color: #fff;
+    margin: 5px 5px;
+    border-radius: 5px;
+}
+
+hr {
+    width: 100%;
+}

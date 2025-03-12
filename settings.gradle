@@ -1,0 +1,6 @@
+rootProject.name = 'multi-module-project'
+
+include ':krim2244-backend'
+include ':krim2244-desktop'
+include ':krim2244-web'
+include ':krim2244-spring'

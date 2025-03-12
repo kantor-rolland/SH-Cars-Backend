@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Handlebars example</title>
+</head>
+<body>
+    <h1>Handlebars Example</h1>
+    <div id="content-div">
+        <form action="logout" method="get">
+            <input type="submit" value="Logout">
+        </form>
+    </div>
+    <hr>
+    <div id="content-div">
+        <div>
+            <h2> Cars: </h2>
+        </div>
+
+        {{#each cars}}
+                <div class="entry">
+                    <p> Name: {{this.name}} </p>
+                    <p> Brand: {{this.brand}} </p>
+                    <p> Year: {{this.year}} </p>
+                    <p> Price: $ {{this.price}} </p>
+                    <p> UploadDate: {{this.uploadDate}} </p>
+                </div>
+                <hr>
+        {{/each}}
+     </div>
+</body>
+</html>

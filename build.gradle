@@ -1,0 +1,30 @@
+/*
+ * Kiinduló gradle file
+ */
+
+subprojects {
+    // only apply linting to subprojects which have their own gradle file
+    if (project.buildFile.exists()) {
+        apply plugin: 'java'
+
+        repositories {
+            mavenCentral()
+        }
+
+        // kozos fuggosegek
+        dependencies {
+            implementation group: 'org.slf4j', name: 'slf4j-api', version: '2.0.7'
+            runtimeOnly group: 'ch.qos.logback', name: 'logback-classic', version: '1.4.11'
+        }
+
+        java {
+            sourceCompatibility = JavaVersion.VERSION_21
+            targetCompatibility = JavaVersion.VERSION_21
+            toolchain {
+                languageVersion = JavaLanguageVersion.of(21)  // Java 21
+            }
+        }
+        apply from: "${rootDir}/lint.gradle"
+    }
+}
+

@@ -1,0 +1,7 @@
+jdbc:
+  url: jdbc:mysql://localhost:3306/sh_cars_spa
+  username: sh_user
+  password: password
+  driver-class-name: com.mysql.cj.jdbc.Driver
+connection-pool:
+  pool-size: 5

@@ -1,0 +1,11 @@
+{
+  "dbType": "jdbc",
+  "jdbc": {
+    "url": "jdbc:mysql://localhost:3306/sh_cars",
+    "username": "sh_user",
+    "password": "password"
+  },
+  "connectionPool": {
+    "poolSize": 4
+  }
+}

@@ -1,0 +1,11 @@
+plugins {
+    id 'application'
+}
+
+application {
+    mainClass = 'edu.bbte.idde.krim2244.presentation.Application'
+}
+
+dependencies {
+    implementation project(':krim2244-backend')
+}
